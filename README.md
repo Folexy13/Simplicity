@@ -1,18 +1,8 @@
 # Simplicity - Your Second Brain, Empowered by Generative AI
 
-<div align="center">
-    <img src="./logo.png" alt="Simplicity-logo" width="30%"  style="border-radius: 50%; padding-bottom: 20px"/>
-</div>
 
-<div align="center">
-<a href="https://discord.gg/HUpRgp2HG8">
-  <img src="https://img.shields.io/badge/discord-join%20chat-blue.svg" alt="Join our Discord" height="40">
-</a>
-</div>
 
 Simplicity, making study simple and Fun.
-
-[Roadmap here](https://brain.Simplicity.app)
 
 ## Key Features 🎯
 
@@ -72,18 +62,9 @@ Additionally, you'll need a [RapidApi keys](https://rapidapi.com/hub) account fo
   git clone git@github.com:Folexy13/Simplicity.git && cd Simplicity
   ```
 
-- **Step 2**: Use the install helper
 
-  You can use the install_helper.sh script to setup your env files
 
-  ```bash
-  brew install gum # Windows (via Scoop) scoop install charm-gum
-
-  chmod +x install_helper.sh
-  ./install_helper.sh
-  ```
-
-- **Step 3**: create the `backend/.env` using the `.env_sample` as a guide
+- **Step 2**: create the `backend/.env` using the `.env_sample` as a guide
 
   > _Your `supabase_service_key` can be found in your Supabase dashboard under Project Settings -> API. Use the `anon` `public` key found in the `Project API keys` section._
 
