@@ -73,33 +73,11 @@ Additionally, you'll need a [RapidApi keys](https://rapidapi.com/hub) account fo
 
   - [ ] Change variables in `backend/.env`
 
-- **Step 3**: Run the ***make production*** in your directory terminal  to run the monolith application or ***yarn production*** or ***npm run production***
+- **Step 3**: Run the ***make production*** or ***yarn production*** or ***npm run production*** in your directory terminal  to run the monolith application 
 
-  Use the `migration.sh` script to run the migration scripts
 
-  ```bash
-  chmod +x migration.sh
-  ./migration.sh
-  ```
 
-  Choose either create_scripts if it's your first time or migrations if you are updating your database.
+- **Step 4**: Navigate to `localhost:3000` in your browser
 
-  All the scripts can be found in the [scripts](scripts/) folder
 
-  > _If you come from an old version of Simplicity, run the scripts in [migration script](scripts/) to migrate your data to the new version in the order of date_
 
-- **Step 5**: Launch the app
-
-  ```bash
-  docker compose -f docker-compose.yml up --build
-  ```
-
-- **Step 6**: Navigate to `localhost:3000` in your browser
-
-- **Step 7**: Want to contribute to the project?
-
-  ```
-  docker compose -f docker-compose.dev.yml up --build
-  ```
-
-## Contributors ✨
