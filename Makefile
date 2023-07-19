@@ -1,5 +1,5 @@
 # Configure .env file access
-include ./server/.env
+include ./backend/.env
 export
 
 DOCKER_IMAGE = simplicity_image
@@ -20,11 +20,11 @@ start-db:
 	docker run --name $(MONGODB_CONTAINER_NAME) -p 27017:27017 -d mongo:$(MONGODB_IMAGE_VERSION)
 
 # Run the Docker container
-run:
+runServer:
 	docker run --network $(NETWORK_NAME) --name $(DOCKER_IMAGE) $(DOCKER_IMAGE)
 
 # Start the MongoDB and Node.js containers
-start: start-db run
+start: start-db runServer
 
 # Stop and remove the Docker containers and network
 stop:
@@ -36,15 +36,15 @@ clean:
 
 # Start the frontend locally
 frontend:
-	cd client && yarn dev
+	cd frontend && yarn dev
 
 # Start the backend locallly
 backend:
-	cd server && yarn dev
+	cd backend && yarn dev
 
 # Start the production build
 production:
-	cd client && yarn build & cd server && yarn dev
+	cd frontend && yarn build & cd backend && yarn dev
 
 # Help target to display available commands
 help:
@@ -52,12 +52,12 @@ help:
 	@echo "- build: Build the Docker image"
 	@echo "- network: Create a Docker network"
 	@echo "- start-db: Start the MongoDB container"
-	@echo "- run: Run the Docker container"
+	@echo "- runServer: Run the Nodejs Server"
 	@echo "- start: Start the MongoDB and Node.js containers"
 	@echo "- stop: Stop and remove the Docker containers and network"
 	@echo "- clean: Remove the Docker image"
-	@echo "- frontend: Start the frontend development server"
-	@echo "- backend: Start the backend development server"
+	@echo "- frontend: Start the frontend development backend"
+	@echo "- backend: Start the backend development backend"
 	@echo "- production: Start the production build"
 
-.PHONY: build network start-db run start stop clean frontend backend production help
+.PHONY: build network start-db runServer start stop clean frontend backend production help
