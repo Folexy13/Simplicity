@@ -66,15 +66,14 @@ Additionally, you'll need a [RapidApi keys](https://rapidapi.com/hub) account fo
 
 - **Step 2**: create the `backend/.env` using the `.env_sample` as a guide
 
-  > _Your `supabase_service_key` can be found in your Supabase dashboard under Project Settings -> API. Use the `anon` `public` key found in the `Project API keys` section._
+  > _Your `RAPIDAPI_KEY` can be found in your Rapid Api dashboard under Project_
 
-  > _Your `JWT_SECRET_KEY`can be found in your supabase settings under Project Settings -> API -> JWT Settings -> JWT Secret_
+  > _Your `RAPIDURI`can be found in your Rapid APi settings under Project Settings_ 
 
-  > _To activate vertexAI with PaLM from GCP follow the instructions [here](https://python.langchain.com/en/latest/modules/models/llms/integrations/google_vertex_ai_palm.html) and update `backend/.env`- It is an advanced feature, please be expert in GCP before trying to use it_
 
   - [ ] Change variables in `backend/.env`
 
-- **Step 4**: Run the following migration scripts on the Supabase database via the web interface (SQL Editor -> `New query`)
+- **Step 3**: Run the ***make production*** in your directory terminal  to run the monolith application or ***yarn production*** or ***npm run production***
 
   Use the `migration.sh` script to run the migration scripts
 
