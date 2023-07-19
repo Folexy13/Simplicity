@@ -1,0 +1,23 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.connectDB = exports.WOLFRAM_APP_ID = exports.PORT = exports.FROM_EMAIL = exports.SENDGRID_API_KEY = exports.TOKEN_SECRET = exports.OPENAI_KEY = exports.MONGO_URI = void 0;
+require("./envConfig");
+const db_1 = __importDefault(require("./db"));
+exports.connectDB = db_1.default;
+const MONGO_URI = process.env.DATABASE_URI;
+exports.MONGO_URI = MONGO_URI;
+const OPENAI_KEY = process.env.OPENAI_KEY;
+exports.OPENAI_KEY = OPENAI_KEY;
+const TOKEN_SECRET = process.env.SECRET;
+exports.TOKEN_SECRET = TOKEN_SECRET;
+const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
+exports.SENDGRID_API_KEY = SENDGRID_API_KEY;
+const FROM_EMAIL = process.env.FROM_EMAIL;
+exports.FROM_EMAIL = FROM_EMAIL;
+const WOLFRAM_APP_ID = process.env.WOLFRAM_APP_ID;
+exports.WOLFRAM_APP_ID = WOLFRAM_APP_ID;
+const PORT = process.env.PORT || 8080;
+exports.PORT = PORT;
