@@ -1,7 +1,5 @@
 # Simplicity - Your Second Brain, Empowered by Generative AI
 
-
-
 Simplicity, making study simple and Fun.
 
 ## Key Features 🎯
@@ -30,7 +28,6 @@ https://vimeo.com/846779307/34f4f56605?share=copy
 ## Getting Started 🚀
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
-
 
 ### Prerequisites 📋
 
@@ -62,22 +59,25 @@ Additionally, you'll need a [RapidApi keys](https://rapidapi.com/hub) account fo
   git clone git@github.com:Folexy13/Simplicity.git && cd Simplicity
   ```
 
+- **Step 2**: install the dependencies
 
+```bash
+ cd Simplicity
+ run npm install or yarn install
+```
 
-- **Step 2**: create the `backend/.env` using the `.env_sample` as a guide
+run npm install or yarn install
+
+- **Step 3**: create the `backend/.env` using the `.env_sample` as a guide
 
   > _Your `RAPIDAPI_KEY` can be found in your Rapid Api dashboard under Project_
 
-  > _Your `RAPIDURI`can be found in your Rapid APi settings under Project Settings_ 
+  > _Your `RAPIDURI`can be found in your Rapid APi settings under Project Settings_
 
+  > _Your `DATABASE_URI`is your mongodb uri_
 
   - [ ] Change variables in `backend/.env`
 
-- **Step 3**: Run the ***make production*** or ***yarn production*** or ***npm run production*** in your directory terminal  to run the monolith application 
+- **Step 4**: Run the **_make production_** or **_yarn production_** or **_npm run production_** in your directory terminal to run the monolith application
 
-
-
-- **Step 4**: Navigate to `localhost:3000` in your browser
-
-
-
+- **Step 5**: Navigate to `localhost:3000` in your browser
