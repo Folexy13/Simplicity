@@ -1,0 +1,39 @@
+.homepage{
+    h2{
+        text-align: center;
+        margin: 10px 0;
+    }
+    p{
+        color: var(--innerTextColor);
+    }
+    .file_section{
+        display: flex;
+        &>*{
+            flex: 1;
+        }
+    }
+    .btn-flex{
+        display: flex;
+        gap: 20px;
+        button{
+            background: var(--primaryButtonBackground);
+            color:var(--primaryButtonColor);
+            &:nth-child(2),&:nth-child(3){
+                border:var(--secondaryButtonOutline);
+                color: var(--secondaryButtonColor);
+                background: var(--secondaryButtonBackground);
+                &:hover{
+                background: var(--primaryButtonBackground);
+                    color: var(--primaryButtonColor);
+                }
+            }
+        }
+    }
+    button{
+        padding: 8px 10px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+}

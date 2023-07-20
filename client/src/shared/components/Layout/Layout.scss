@@ -1,0 +1,13 @@
+.page_layout{
+    width: 100%;
+   nav{
+    border-bottom: 2px solid var(--border-color);
+   }
+   main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0;
+   }
+}

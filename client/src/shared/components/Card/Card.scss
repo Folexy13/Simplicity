@@ -1,0 +1,113 @@
+.card {
+    // padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(12, 9, 9, 0.1);
+    margin: 30px 0;
+    color: #002;
+    position: relative;
+    &.plan {
+        cursor: pointer;
+        .title{
+            border-radius: 20px  20px 0 0;
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+             padding:2rem 1rem;
+        }
+        .body{
+        padding:1rem;
+            .flex{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                margin: 20px 0;
+            }
+        }
+    
+    .footer {
+            border-top: 1px solid #ccc;
+            padding: 1rem;
+            text-align: center;
+            font-weight: 900;
+        }
+
+    }
+
+    &.course {
+        background-color: #007bff;
+        color: #ffffff;
+    }
+
+        &:hover {
+            background-color: #130e0e ;
+            z-index: 10;
+        }
+    
+        .hover-text {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #333;
+            font-weight: bold;
+            font-size: 18px;
+            z-index: 1000;
+                color: #fff;
+        }
+    
+        &:hover .hover-text {
+            display: block;
+        }
+}
+
+//course card styling
+.course_card {
+    // display: flex; 
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    // padding: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    // background-color: red;
+h2 {
+        color: #002;
+    }
+    .course_image {
+        
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+    }
+
+    .course_details {
+        flex: 1;
+            padding: 10px;
+        .course_title {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+            .course_description {
+                    margin-bottom: 8px;
+                }
+            
+                .course_instructor {
+                    font-style: italic;
+                    color: #888888;
+                    margin-bottom: 8px;
+                }
+            
+                .course_button {
+                    background-color: #007bff;
+                    color: #ffffff;
+                    border: none;
+                    padding: 8px 16px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+        
+    }
+}

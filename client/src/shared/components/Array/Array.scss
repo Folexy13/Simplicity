@@ -1,0 +1,25 @@
+.arr{
+    margin: 12px 0 30px 0;
+    .view{
+        background: transparent;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+    }
+    h4{
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    .itemContainer{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        .arrItm{
+        margin: 10px 0;
+    }
+    svg{
+        cursor: pointer;
+    }
+    }
+    
+}
